@@ -1,8 +1,8 @@
 {
-  "name": "JayBee TikTok Downloader Bot",
-  "description": "A Telegram bot to download TikTok videos without any watermark",
+  "name": "Rich TikTok Bot",
+  "description": "TikTokdan nişansız video yükləmək üçün Telegram Bot",
   "logo" : "https://telegra.ph/file/05bae0725724007c72fa1.jpg",
-  "success_url" : "https://t.me/JayBeeBots",
+  "success_url" : "https://t.me/RichBotsNews",
   "keywords": [
     "telegram",
     "bot",
@@ -13,27 +13,27 @@
   "website": "https://github.com/TerminalWarlord/TikTok-Downloader-Bot",
   "env": {
     "BOT_TOKEN": {
-      "description": "Your bot Bot Token, get this value from @BotFather.",
+      "description": "@BotFather dən aldığınız token.",
       "value": ""
     },
     "API_KEY": {
-      "description": "Your APP API KEY, get this from https://my.telegram.org",
+      "description": "Sizin https://my.telegram.org dan aldığınız API id",
       "value": ""
     },
     "API_HASH": {
-      "description": "Your APP HASH, get this from https://my.telegram.org",
+      "description": "Sizin https://my.telegram.org dan aldığınız API HASH",
      "value": ""
     },
     "CHANNEL_URL": {
-      "description": "URL of your Telegram channel link.",
+      "description": "Telegram Kanalın linki.",
       "value": ""
     },
     "BOT_URL": {
-      "description": "Username of your Telegram Bot (without @). Example: JayBeeTikTokBot",
+      "description": "Telegram botun linki (@ işarəsiz). Məsələn: RichTokBot",
       "value": ""
     },
     "WORKERS": {
-      "description": "Number of threads to use, this depends on usage.  4 is the recommended (and default) amount, but your experience may vary.",
+      "description": "İstifadə ediləcək mövzuların sayı, bu istifadədən asılıdır. 4 tövsiyə olunan (və defolt) məbləğdir, amma təcrübəniz fərqli ola bilər.",
       "value": "4"
     }
   }
