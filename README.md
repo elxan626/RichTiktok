@@ -42,7 +42,7 @@ Demo: [Rich TikTok Bot](https://t.me/RichTokBot)
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/TerminalWarlord/TikTok-Downloader-Bot)
 
 ---
-### Star the Repo if you find it useful :heart:
+### Faydalı hesab edirsinizsə, Reponu ulduzlayın :heart:
 ### © [TerminalWarlord](https://t.me/JayBeeBots)
 #### Bütün Haqqlar Rezervlənib
 ---
