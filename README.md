@@ -21,7 +21,7 @@ TikTokdan işarəsiz video yükləmək üçün Telegram bot.
 Youtube: [Deploy Öyrənməsi](https://youtu.be/LOK3lfJ9ous)<br>
 Demo: [Rich TikTok Bot](https://t.me/RichTokBot)
 
-## Configuring Environments
+## Mühitlərin Konfiqurasiyası
 - `API_HASH` : Sizin https://my.telegram.org dan aldığınız API HASH
 - `API_KEY` : Sizin https://my.telegram.org dan aldığınız API id
 - `BOT_TOKEN` : @BotFather dən aldığınız bot token
