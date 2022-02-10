@@ -1,7 +1,7 @@
 
 
-# TikTok Downloader Bot
-A Telegram bot to download TikTok videos without any watermark.
+# Rich TikTok Bot
+TikTokdan işarəsiz video yükləmək üçün Telegram bot.
 <div align="center">
 <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/>
 <img alt="PyCharm" src="https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white"/>
@@ -14,25 +14,25 @@ A Telegram bot to download TikTok videos without any watermark.
  
 
 
-### Host on Heroku
+### Herokuda Aparıcı
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/TerminalWarlord/TikTok-Downloader-Bot/tree/master"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/elxan626/RichTikTok/tree/master"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Herokuda Deploy Etmək"/></a></p>
 
-Youtube: [Deployment Tutorial](https://youtu.be/LOK3lfJ9ous)<br>
-Demo: [JayBee TikTok Downloader](https://t.me/JayBeeTikTokBot)
+Youtube: [Deploy Öyrənməsi](https://youtu.be/LOK3lfJ9ous)<br>
+Demo: [Rich TikTok Bot](https://t.me/RichTokBot)
 
 ## Configuring Environments
-- `API_HASH` : Your Telegram APP HASH, get this from https://my.telegram.org
-- `API_KEY` : Your Telegram APP API KEY, get this from https://my.telegram.org
-- `BOT_TOKEN` : Your bot token, generate it from https://t.me/BotFather
-- `WORKERS` : Number of threads to use, this depends on usage. 4 is the recommended (and default) amount, but your experience may vary.
-- `CHANNEL_URL` : URL of your Telegram channel link.
-- `BOT_URL` : Username of your Telegram Bot (without @). Example: **_JayBeeTikTokBot_**
+- `API_HASH` : Sizin https://my.telegram.org dan aldığınız API HASH
+- `API_KEY` : Sizin https://my.telegram.org dan aldığınız API id
+- `BOT_TOKEN` : @BotFather dən aldığınız bot token
+- `WORKERS` : İstifadə ediləcək mövzuların sayı, bu istifadədən asılıdır. 4 tövsiyə olunan (və defolt) məbləğdir
+- `CHANNEL_URL` : Telegram kanalın linki.
+- `BOT_URL` : Telegram Botun linki (@ işarəsiz). Məsələn: **_RichTokBot_**
 
 
 
 
-## Credits
+## Kreditlər
 - [TerminalWarlord](https://github.com/TerminalWarlord)
 ### Show some :heart: and :star: the repo to support the project
 
@@ -44,5 +44,5 @@ Demo: [JayBee TikTok Downloader](https://t.me/JayBeeTikTokBot)
 ---
 ### Star the Repo if you find it useful :heart:
 ### © [TerminalWarlord](https://t.me/JayBeeBots)
-#### All Rights Reserved
+#### Bütün Haqqlar Rezervlənib
 ---
