@@ -2,7 +2,7 @@
 # license found at https://github.com/TerminalWarlord/TikTok-Downloader-Bot/blob/master/LICENSE
 # Encoding = 'utf-8'
 # Fork and Deploy, do not modify this repo and claim it yours
-# For collaboration mail me at dev.jaybee@gmail.com
+# For collaboration mail me at elxanyusifov751@gmail.com
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultArticle, InputTextMessageContent
 import shutil
@@ -31,11 +31,11 @@ app = Client("JayBee", bot_token=bot_token, api_id=api, api_hash=hash, workers=w
 
 @app.on_message(filters.command('start'))
 def start(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/TerminalWarlord/TikTok-Downloader-Bot/")]]
+    kb = [[InlineKeyboardButton('Kanal 🛡', url="https://t.me/RichBotsNews"),InlineKeyboardButton('Support 🔰', url="https://t.me/RichBotsSupport/")]]
     reply_markup = InlineKeyboardMarkup(kb)
-    app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am **TikTok Downloader Bot**.\nI can download TikTok video without Watermark.\n\n"
-                          "__**Developer :**__ __@JayBeeDev__\n"
-                          "__**Language :**__ __Python__\n"
+    app.send_message(chat_id=message.from_user.id, text=f"Salam, mən **Rich TikTok Botuyam**.\nTikTok videosunu nişanı olmadan yükləyə bilərəm.\n\n"
+                          "__**Developer :**__ __@Muellime__\n"
+                          "__**Dil :**__ __Python__\n"
                           "__**Framework :**__ __🔥 Pyrogram__",
                      parse_mode='md',
                      reply_markup=reply_markup)
@@ -45,10 +45,10 @@ def start(client, message):
 
 @app.on_message(filters.command('help'))
 def help(client, message):
-    kb = [[InlineKeyboardButton('Channel 🛡', url=chnnl),InlineKeyboardButton('Repo 🔰', url="https://github.com/TerminalWarlord/TikTok-Downloader-Bot/")]]
+    kb = [[InlineKeyboardButton('Kanal 🛡', url="https://t.me/RichBotsNews"),InlineKeyboardButton('Support 🔰', url="https://t.me/RichBotsSupport/")]]
     reply_markup = InlineKeyboardMarkup(kb)
-    app.send_message(chat_id=message.from_user.id, text=f"Hello there, I am **TikTok Downloader Bot**.\nI can download any TikTok video from a given link.\n\n"
-                                            "__Send me a TikTok video link__",
+    app.send_message(chat_id=message.from_user.id, text=f"Salam, mən **Rich TikTok Botuyam**.\nVerilmiş linkdən istənilən TikTok videosunu yükləyə bilərəm.\n\n"
+                                            "__Mənə TikTok videosunun linki atın__",
                      parse_mode='md',
                      reply_markup=reply_markup)
 
@@ -56,7 +56,7 @@ def help(client, message):
 @app.on_message((filters.regex("http://")|filters.regex("https://")) & (filters.regex('tiktok')|filters.regex('douyin')))
 def tiktok_dl(client, message):
     a = app.send_message(chat_id=message.chat.id,
-                         text='__Downloading File to the Server__',
+                         text='__**Fayl Serverə Yüklənir**__',
                          parse_mode='md')
     link = re.findall(r'\bhttps?://.*[(tiktok|douyin)]\S+', message.text)[0]
     link = link.split("?")[0]
@@ -79,7 +79,7 @@ def tiktok_dl(client, message):
     r = requests.get(api, params=params, headers=headers).json()['videoLinks']['download']
     directory = str(round(time.time()))
     filename = str(int(time.time()))+'.mp4'
-    size = int(requests.head(r).headers['Content-length'])
+    size = int(requests.head(r).headers['Video Uzunluğu'])
     total_size = "{:.2f}".format(int(size) / 1048576)
     try:
         os.mkdir(directory)
@@ -100,23 +100,23 @@ def tiktok_dl(client, message):
                 if show == 1:
                     try:
                         a.edit(f'__**URL :**__ __{message.text}__\n'
-                               f'__**Total Size :**__ __{total_size} MB__\n'
-                               f'__**Downloaded :**__ __{percent}%__\n',
+                               f'__**Ümumi Ölçüzü :**__ __{total_size} MB__\n'
+                               f'__**Yüklndi :**__ __{percent}%__\n',
                                disable_web_preview=False)
                     except:
                         pass
                     if percent == 100:
                         show = 0
 
-        a.edit(f'__Downloaded to the server!\n'
-               f'Uploading to Telegram Now ⏳__')
+        a.edit(f'__**Serverə Yükləndi**!\n'
+               f'Telegrama Yüklənir ⏳__')
         start = time.time()
         title = filename
         app.send_document(chat_id=message.chat.id,
                           document=f"./{directory}/{filename}",
-                          caption=f"**File :** __{filename}__\n"
-                          f"**Size :** __{total_size} MB__\n\n"
-                          f"__Uploaded by @{BOT_URL}__",
+                          caption=f"**Fa :** __{filename}__\n"
+                          f"**Ölçüsü :** __{total_size} MB__\n\n"
+                          f"__Uploaded by @RichTokBot__",
                           file_name=f"{directory}",
                           parse_mode='md',
                           progress=progress,
