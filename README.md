@@ -34,12 +34,12 @@ Demo: [Rich TikTok Bot](https://t.me/RichTokBot)
 
 ## Kreditlər
 - [TerminalWarlord](https://github.com/TerminalWarlord)
-### Show some :heart: and :star: the repo to support the project
+### Layihəni dəstəkləmək üçün bəzi ❤️ və ⭐ repo göstərin
 
 [![GitHub stars](https://img.shields.io/github/stars/TerminalWarlord/Tiktok-Downloader-Bot.svg?style=social&label=Star)](https://github.com/TerminalWarlord/) ![GitHub followers](https://img.shields.io/github/followers/TerminalWarlord.svg?style=social&label=Follow)
 
-[![Telegram Channel](https://img.shields.io/badge/Telegram-Channel-orange)](https://t.me/JayBeeBots)
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/TerminalWarlord/TikTok-Downloader-Bot)
+[![Telegram Kanal](https://img.shields.io/badge/Telegram-Channel-orange)](https://t.me/RichBotNews)
+![Hitlər](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/elxan626/RichTikTok)
 
 ---
 ### Faydalı hesab edirsinizsə, Reponu ulduzlayın :heart:
